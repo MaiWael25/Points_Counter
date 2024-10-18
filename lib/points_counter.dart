@@ -1,19 +1,11 @@
 import 'package:flutter/material.dart';
 
-class PointsCounter extends StatefulWidget {
-  const PointsCounter({super.key});
 
-  @override
-  State<PointsCounter> createState() => _PointsCounterState();
-}
 
-class _PointsCounterState extends State<PointsCounter> {
-  int counter1 = 1;
-  int counter2 = 1;
-  @override
-  void initState() {
-    super.initState();
-  }
+class HomePage extends StatelessWidget {
+  //int counter1 = 0;
+  //int counter2 = 0;
+ 
 
   @override
   Widget build(BuildContext context) {
@@ -44,15 +36,12 @@ class _PointsCounterState extends State<PointsCounter> {
 
                       ),
                       Text(
-                        "$counter1",
+                        '0',
                         style: const TextStyle(fontSize: 150,),
                       ),
                       ElevatedButton(
                           onPressed: () {
-                            setState(() {
-                              counter1++;
-                              print(counter1);
-                            });
+                            
                           },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Color(0xffDE8F5F)
@@ -67,10 +56,7 @@ class _PointsCounterState extends State<PointsCounter> {
                           ),),
                       ElevatedButton(
                           onPressed: () {
-                            setState(() {
-                              counter1 += 2;
-                              print(counter1);
-                            });
+                            
                           },
                           style: ElevatedButton.styleFrom(
                               backgroundColor: Color(0xffDE8F5F)
@@ -84,10 +70,7 @@ class _PointsCounterState extends State<PointsCounter> {
                           )),
                       ElevatedButton(
                           onPressed: () {
-                            setState(() {
-                              counter1 += 3;
-                              print(counter1);
-                            });
+                         
                           },
                           style: ElevatedButton.styleFrom(
                               backgroundColor: Color(0xffDE8F5F)
@@ -120,15 +103,12 @@ class _PointsCounterState extends State<PointsCounter> {
                         textAlign: TextAlign.center,
                       ),
                       Text(
-                        "$counter2",
+                        '0',
                         style: const TextStyle(fontSize: 150,),
                       ),
                       ElevatedButton(
                           onPressed: () {
-                            setState(() {
-                              counter2++;
-                              print(counter2);
-                            });
+                           
                           },
                           style: ElevatedButton.styleFrom(
                               backgroundColor: Color(0xffDE8F5F)
@@ -142,10 +122,7 @@ class _PointsCounterState extends State<PointsCounter> {
                           )),
                       ElevatedButton(
                           onPressed: () {
-                            setState(() {
-                              counter2 += 2;
-                              print(counter2);
-                            });
+                          
                           },
                           style: ElevatedButton.styleFrom(
                               backgroundColor: Color(0xffDE8F5F)
@@ -159,10 +136,7 @@ class _PointsCounterState extends State<PointsCounter> {
                           )),
                       ElevatedButton(
                           onPressed: () {
-                            setState(() {
-                              counter2 += 3;
-                              print(counter2);
-                            });
+                          
                           },
                           style: ElevatedButton.styleFrom(
                               backgroundColor: const Color(0xffDE8F5F)
@@ -182,10 +156,7 @@ class _PointsCounterState extends State<PointsCounter> {
 
           ),
           ElevatedButton(onPressed: (){
-            setState(() {
-              counter1=0;
-              counter2=0;
-            });
+         
           }, style: ElevatedButton.styleFrom(
               backgroundColor: const Color(0xffDE8F5F)
           ),
